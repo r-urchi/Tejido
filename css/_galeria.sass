@@ -1,11 +1,15 @@
 .galeria
     background: #f2f2f2
 
+#bufandas
+    background: #fafafa
+
 
 .galeria__contenedor
     display: flex
     justify-content: space-evenly
     flex-wrap: wrap
+    overflow: hidden
 
 .galeria__subtitulo
     text-align: center
@@ -22,6 +26,9 @@
     margin-bottom: 15px
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5)
     cursor: pointer
+    transition: 0.5s all ease
+    &:hover
+        filter: saturate(135%)
 
 
 .imagen-light
@@ -44,7 +51,7 @@
 
 .agregar-imagen
     object-fit: cover
-    width: 60%
+    height: 95vh
     border-radius: 10px
     transform: scale(0)
     transition: transform .3s .2s
